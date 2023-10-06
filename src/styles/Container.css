@@ -1,3 +1,9 @@
 .container {
   margin: 0 8%;
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    margin: 0 5%;
+  }
 }/*# sourceMappingURL=Container.css.map */

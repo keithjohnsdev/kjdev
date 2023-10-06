@@ -1,6 +1,7 @@
 body {
     margin: 0;
     font-family: var(--title-font);
+    min-width: 320px;
 }
 
 p {

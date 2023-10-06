@@ -7,15 +7,17 @@
   height: 2000px;
 
   & .hero {
-    padding-top: 100px;
+    padding-top: 120px;
     margin: 0 10%;
     display: flex;
+    flex-wrap: wrap;
 
     h1 {
       font-size: 5em;
+      line-height: 100%;
       color: var(--accent-color);
-      margin: 20px 0 5px;
-      animation: 1.7s fade-in ease 1;
+      margin: 0;
+      animation: 1.7s fade-in-drop ease 1;
     }
 
     p {
@@ -24,11 +26,12 @@
     }
 
     .line1 {
-      animation: 2.6s fade-in-delay ease 1;
+      animation: 3s fade-in-delay ease 1;
+      margin-top: 30px;
     }
 
     .line2 {
-      animation: 6.2s fade-in-delay ease 1;
+      animation: 5.5s fade-in-delay1 ease 1;
     }
 
     .standout {
@@ -37,25 +40,28 @@
       display: inline-block;
       transition: transform 0.2s ease-in-out;
       animation: bounce 0.7s ease 4;
-      animation-delay: 7.7s;
+      animation-delay: 6.7s;
     }
 
     .hero-left {
       width: 50%;
-      padding-top: 70px;
+      padding-top: 100px;
+      display: flex;
+      flex-direction: column;
     }
 
     .hero-right {
       display: flex;
       justify-content: center;
       width: 50%;
+      padding-top: 0px;
     }
 
     .hero-pic {
       border-radius: 50%;
-      width: 70%;
+      width: 400px;
       opacity: 0.6;
-      animation: fade-in-pic 5s ease 1;
+      animation: fade-in-pic 4.8s ease 1;
       transition: border-radius 0.5s ease, opacity 0.5s ease;
 
       &:hover {
@@ -63,6 +69,30 @@
         opacity: 0.8;
       }
     }
+  }
+
+  hr {
+    border-color: gray;
+    border-top: none;
+    width: 30%;
+  }
+}
+
+//-- Media Queries
+
+@media screen and (max-width: 1200px) {
+  .content .hero {
+    padding-top: 0px;
+  }
+  .content .hero .hero-left {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .content .hero .hero-right {
+    width: 100%;
+    margin-top: 20px;
   }
 }
 
@@ -78,7 +108,7 @@
   }
 }
 
-@keyframes fade-in {
+@keyframes fade-in-drop {
   0% {
     opacity: 0;
     transform: translateY(-10px);
@@ -90,6 +120,18 @@
 }
 
 @keyframes fade-in-delay {
+  0% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in-delay1 {
   0% {
     opacity: 0;
   }
@@ -105,7 +147,7 @@
   0% {
     opacity: 0;
   }
-  66% {
+  60% {
     opacity: 0;
     border-radius: 5%;
   }

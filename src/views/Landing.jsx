@@ -17,6 +17,7 @@ const Landing = () => {
               <img src="./keith-profile.jpg" className="hero-pic" alt="keith sitting in a peaceful pose next to a statue" title="me and a dear friend"/>
             </div>
           </div>
+          <hr />
         </Container>
       </div>
     </Layout>

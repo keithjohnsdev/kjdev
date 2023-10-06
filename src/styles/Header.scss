@@ -30,7 +30,7 @@
   padding-right: 100px;
 
   .logo-middle {
-    width: 0px;
+    width: 30px;
     transition: width 0.25s ease;
     overflow: hidden;
     height: 65px;
@@ -40,7 +40,7 @@
 
 .logo.expanded {
   .logo-middle {
-    width: 260px;
+    width: 252px;
     :hover {
         color: rgb(133, 192, 177);
     }

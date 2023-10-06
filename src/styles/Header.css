@@ -25,10 +25,10 @@
   color: var(--bg-color1);
   display: flex;
   cursor: pointer;
-  padding-right: 50px;
+  padding-right: 100px;
 }
 .logo .logo-middle {
-  width: 0px;
+  width: 30px;
   transition: width 0.25s ease;
   overflow: hidden;
   height: 65px;
@@ -36,8 +36,8 @@
 }
 
 .logo.expanded .logo-middle {
-  width: 260px;
+  width: 252px;
 }
 .logo.expanded .logo-middle :hover {
-  color: rgb(71, 114, 75);
+  color: rgb(133, 192, 177);
 }/*# sourceMappingURL=Header.css.map */

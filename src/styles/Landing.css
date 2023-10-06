@@ -1,25 +1,33 @@
 @import "./variables.css";
 .content {
   background-color: var(--bg-color1);
-  background: linear-gradient(135deg, var(--bg-color1), rgb(41, 130, 136));
+  background: linear-gradient(145deg, var(--bg-color1), rgb(0, 0, 0));
   padding-top: 70px;
   height: 2000px;
 }
 .content .hero {
-  padding-top: 70px;
+  padding-top: 120px;
   margin: 0 10%;
   display: flex;
+  flex-wrap: wrap;
 }
 .content .hero h1 {
   font-size: 5em;
+  line-height: 100%;
   color: var(--accent-color);
-  margin: 20px 0 10px;
-  animation: fade-in 2s ease 1;
+  margin: 0;
+  animation: 1.7s fade-in-drop ease 1;
 }
 .content .hero p {
   color: var(--primary-color);
   font-size: 1.2em;
-  animation: fade-in 2s ease 1;
+}
+.content .hero .line1 {
+  animation: 3s fade-in-delay ease 1;
+  margin-top: 30px;
+}
+.content .hero .line2 {
+  animation: 5.5s fade-in-delay1 ease 1;
 }
 .content .hero .standout {
   color: var(--accent-color);
@@ -27,28 +35,51 @@
   display: inline-block;
   transition: transform 0.2s ease-in-out;
   animation: bounce 0.7s ease 4;
-  animation-delay: 4s;
+  animation-delay: 6.7s;
 }
 .content .hero .hero-left {
   width: 50%;
-  padding-top: 70px;
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
 }
 .content .hero .hero-right {
   display: flex;
   justify-content: center;
   width: 50%;
+  padding-top: 0px;
 }
 .content .hero .hero-pic {
   border-radius: 50%;
-  width: 70%;
+  width: 400px;
   opacity: 0.6;
-  animation: fade-in-pic 2s ease 1;
-  transition: border-radius 0.5s ease;
+  animation: fade-in-pic 4.8s ease 1;
+  transition: border-radius 0.5s ease, opacity 0.5s ease;
 }
 .content .hero .hero-pic:hover {
   border-radius: 5%;
+  opacity: 0.8;
+}
+.content hr {
+  border-color: gray;
+  border-top: none;
+  width: 30%;
 }
 
+@media screen and (max-width: 1200px) {
+  .content .hero {
+    padding-top: 0px;
+  }
+  .content .hero .hero-left {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+  .content .hero .hero-right {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
 @keyframes bounce {
   0%, 100% {
     transform: translateY(0);
@@ -59,8 +90,32 @@
     opacity: 0.7;
   }
 }
-@keyframes fade-in {
+@keyframes fade-in-drop {
   0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fade-in-delay {
+  0% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in-delay1 {
+  0% {
+    opacity: 0;
+  }
+  80% {
     opacity: 0;
   }
   100% {
@@ -71,7 +126,12 @@
   0% {
     opacity: 0;
   }
+  60% {
+    opacity: 0;
+    border-radius: 5%;
+  }
   100% {
     opacity: 0.6;
+    border-radius: 50%;
   }
 }/*# sourceMappingURL=Landing.css.map */
