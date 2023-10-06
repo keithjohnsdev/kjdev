@@ -1,0 +1,43 @@
+@import "./variables.css";
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 70px;
+  background-color: var(--primary-color);
+  transition: height 0.2s ease-out; /* Smooth height transition */
+  display: flex;
+  padding: 0 2%;
+  align-items: center;
+  z-index: 100;
+}
+
+.header.collapsed {
+  height: 0px; /* Adjust the collapsed height as needed */
+}
+.header.collapsed .logo-middle, .header.collapsed .logo {
+  display: none;
+}
+
+.logo {
+  font-family: var(--title-font);
+  color: var(--bg-color1);
+  display: flex;
+  cursor: pointer;
+  padding-right: 50px;
+}
+.logo .logo-middle {
+  width: 0px;
+  transition: width 0.25s ease;
+  overflow: hidden;
+  height: 65px;
+  font-size: 16px;
+}
+
+.logo.expanded .logo-middle {
+  width: 260px;
+}
+.logo.expanded .logo-middle :hover {
+  color: rgb(71, 114, 75);
+}/*# sourceMappingURL=Header.css.map */

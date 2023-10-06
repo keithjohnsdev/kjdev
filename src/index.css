@@ -1,0 +1,9 @@
+body {
+    margin: 0;
+    font-family: var(--title-font);
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
