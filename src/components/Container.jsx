@@ -1,3 +1,4 @@
+import React from "react";
 import "../styles/Container.scss";
 import PropTypes from "prop-types"
 
