@@ -14,7 +14,7 @@ const Landing = () => {
               <p className="line2">I like to make web sites into web <span className="standout">experiences.</span></p>
             </div>
             <div className="hero-right">
-              <img src="/keith-profile.jpg" className="hero-pic" alt="keith sitting in a peaceful pose next to a statue" title="me and a dear friend"/>
+              <img src="./keith-profile.jpg" className="hero-pic" alt="keith sitting in a peaceful pose next to a statue" title="me and a dear friend"/>
             </div>
           </div>
         </Container>

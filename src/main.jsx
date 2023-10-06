@@ -9,7 +9,7 @@ const router = createBrowserRouter([
     path: "/",
     element: <Landing />,
   },
-]);
+], { basename: import.meta.env.DEV ? '/' : '/kjdev/' });
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
