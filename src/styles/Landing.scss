@@ -1,4 +1,5 @@
 @import "./variables.css";
+$bg-color1: rgb(41, 64, 70);
 
 .content {
   background-color: var(--bg-color1);
@@ -31,7 +32,7 @@
     }
 
     .line2 {
-      animation: 5.5s fade-in-delay1 ease 1;
+      animation: 3s fade-in-delay ease 1;
     }
 
     .standout {
@@ -40,12 +41,12 @@
       display: inline-block;
       transition: transform 0.2s ease-in-out;
       animation: bounce 0.7s ease 4;
-      animation-delay: 6.7s;
+      animation-delay: 5s;
     }
 
     .hero-left {
       width: 50%;
-      padding-top: 100px;
+      padding-top: 60px;
       display: flex;
       flex-direction: column;
     }
@@ -61,7 +62,7 @@
       border-radius: 50%;
       width: 400px;
       opacity: 0.6;
-      animation: fade-in-pic 4.8s ease 1;
+      animation: fade-in-pic 3s ease 1;
       transition: border-radius 0.5s ease, opacity 0.5s ease;
 
       &:hover {
@@ -71,10 +72,35 @@
     }
   }
 
+  .btn-wrapper {
+    margin-top: 50px;
+  }
+
+  .pop-btn {
+    border-radius: 50px;
+    padding: 20px 30px;
+    cursor: pointer;
+    background-color: var(--bg-color1);
+    border: none;
+    color: var(--primary-color);
+    font-weight: 500;
+    font-size: 18px;
+    font-family: var(--title-font);
+    box-shadow: 4px 4px 0 var(--accent-color);
+    animation: 3s fade-in-delay ease 1;
+
+    &:hover {
+      transform: translate(3px, 3px);
+      box-shadow: 1px 1px 0 var(--accent-color);
+      background-color: adjust-color($color: $bg-color1, $lightness: 3%);
+    }
+  }
+
   hr {
     border-color: gray;
     border-top: none;
     width: 30%;
+    margin-top: 120px;
   }
 }
 

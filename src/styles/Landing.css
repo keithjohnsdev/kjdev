@@ -64,6 +64,7 @@
   border-color: gray;
   border-top: none;
   width: 30%;
+  margin-top: 70px;
 }
 
 @media screen and (max-width: 1200px) {

@@ -12,6 +12,9 @@ const Landing = () => {
               <h1>Hello, World.</h1>
               <p className="line1">Nice to meet you. I&apos;m Keith.</p>
               <p className="line2">I like to make web sites into web <span className="standout">experiences.</span></p>
+              <div className="btn-wrapper">
+                <button className="pop-btn">SAY HELLO!</button>
+              </div>
             </div>
             <div className="hero-right">
               <img src="./keith-profile.jpg" className="hero-pic" alt="keith sitting in a peaceful pose next to a statue" title="me and a dear friend"/>
