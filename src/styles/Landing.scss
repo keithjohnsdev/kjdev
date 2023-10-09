@@ -130,6 +130,16 @@ $bg-color1: rgb(41, 64, 70);
   }
 }
 
+@media screen and (max-width: 600px) {
+  .content .hero {
+
+    .hero-pic {
+      width: 300px;
+      height: 300px;
+    }
+  }
+}
+
 @keyframes bounce {
   0%,
   100% {
