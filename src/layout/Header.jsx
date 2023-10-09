@@ -10,8 +10,10 @@ const Header = () => {
     // Add a scroll event listener to handle the header collapse/expand
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
-
-      if (currentScrollY > prevScrollY && !isCollapsed) {
+      if (currentScrollY === 0) {
+        setIsCollapsed(false);
+      }
+      else if (currentScrollY > prevScrollY && !isCollapsed) {
         setIsCollapsed(true); // Scrolling down, collapse the header
       } else if (currentScrollY < prevScrollY && isCollapsed) {
         setIsCollapsed(false); // Scrolling up, expand the header

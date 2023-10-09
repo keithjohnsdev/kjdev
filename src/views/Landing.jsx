@@ -13,7 +13,7 @@ const Landing = () => {
               <p className="line1">Nice to meet you. I&apos;m Keith.</p>
               <p className="line2">I like to make web sites into web <span className="standout">experiences.</span></p>
               <div className="btn-wrapper">
-                <button className="pop-btn" onClick={() => window.location.href = 'mailto:keithjohnsdev@gmail.com'}>SAY HELLO!</button>
+                <button className="pop-btn" onClick={() => window.location.href = 'mailto:keithjohnsdev@gmail.com?subject=Hello!'}>SAY HELLO!</button>
               </div>
             </div>
             <div className="hero-right">
