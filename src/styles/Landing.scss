@@ -46,7 +46,7 @@ $bg-color1: rgb(41, 64, 70);
 
     .hero-left {
       width: 50%;
-      padding-top: 60px;
+      padding-top: 40px;
       display: flex;
       flex-direction: column;
     }
@@ -61,6 +61,7 @@ $bg-color1: rgb(41, 64, 70);
     .hero-pic {
       border-radius: 50%;
       width: 400px;
+      height: 400px;
       opacity: 0.6;
       animation: fade-in-pic 3s ease 1;
       transition: border-radius 0.5s ease, opacity 0.5s ease;
@@ -73,7 +74,7 @@ $bg-color1: rgb(41, 64, 70);
   }
 
   .btn-wrapper {
-    margin-top: 50px;
+    margin-top: 40px;
   }
 
   .pop-btn {
@@ -101,6 +102,7 @@ $bg-color1: rgb(41, 64, 70);
     border-top: none;
     width: 30%;
     margin-top: 120px;
+    animation: 3s fade-in-delay ease 1;
   }
 }
 
@@ -108,17 +110,23 @@ $bg-color1: rgb(41, 64, 70);
 
 @media screen and (max-width: 1200px) {
   .content .hero {
-    padding-top: 0px;
-  }
-  .content .hero .hero-left {
-    width: 100%;
-    align-items: center;
-    text-align: center;
-  }
+    padding-top: 50px;
 
-  .content .hero .hero-right {
-    width: 100%;
-    margin-top: 20px;
+    .hero-left {
+      width: 100%;
+      align-items: center;
+      text-align: center;
+    }
+
+    .hero-right {
+      width: 100%;
+      margin-top: 20px;
+    }
+
+    .btn-wrapper {
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
   }
 }
 
