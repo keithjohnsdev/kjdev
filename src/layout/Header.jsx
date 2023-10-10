@@ -35,7 +35,7 @@ const Header = () => {
       <div className={`logo ${isHovered ? 'expanded' : ''}`} onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
         <h1>&#123;</h1>
         <div className="logo-middle">
-          <h1>{ isHovered ? "keithjohns: dev" : "kj"}</h1>
+          <h1>{ isHovered ? "keithjohns: " : "kj"}<span className="logo-accent">{ isHovered ? "dev" : ""}</span></h1>
         </div>
         <h1>&#125;</h1>
       </div>

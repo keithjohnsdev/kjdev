@@ -17,7 +17,8 @@
 .header.collapsed {
   height: 0px; /* Adjust the collapsed height as needed */
 
-  & .logo-middle, .logo {
+  & .logo-middle,
+  .logo {
     display: none;
   }
 }
@@ -42,7 +43,10 @@
   .logo-middle {
     width: 252px;
     :hover {
-        color: rgb(133, 192, 177);
+      color: rgb(81, 161, 161);
+      .logo-accent {
+        color: rgb(134, 49, 134);
+      }
     }
   }
 }

@@ -1,0 +1,35 @@
+@import "./variables.css";
+.section-title {
+  font-family: var(--section-title-font);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 140px;
+  animation: 3s fade-in-delay ease 1;
+}
+
+hr {
+  border-color: var(--primary-color-dark);
+  border-top: none;
+  width: 30%;
+  position: relative;
+  z-index: 0;
+  margin: 0;
+}
+
+.title {
+  background-color: var(--primary-color-dark);
+  padding: 10px 20px;
+  border-radius: 50px;
+  width: fit-content;
+  margin: 0;
+  transform: translateY(-22px);
+  color: var(--bg-color1-dark);
+  box-shadow: 1px 3px 1px black;
+}
+
+@media screen and (max-width: 900px) {
+  hr {
+    width: 50%;
+  }
+}

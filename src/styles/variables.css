@@ -1,6 +1,10 @@
 :root {
-    --primary-color: #f1efdf;;
+    --primary-color: #f1efdf;
+    --primary-color-dark: #e4deb6;
     --accent-color: rgb(163, 236, 218);
     --bg-color1: rgb(41, 64, 70);
+    --bg-color1-light: rgb(14, 48, 56);
+    --bg-color1-dark: rgb(28, 39, 43);
     --title-font: 'Poppins', sans-serif;
+    --section-title-font: 'Tilt Neon', sans-serif;
   }

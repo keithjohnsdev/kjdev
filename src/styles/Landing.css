@@ -1,7 +1,7 @@
 @import "./variables.css";
 .content {
   background-color: var(--bg-color1);
-  background: linear-gradient(145deg, var(--bg-color1), rgb(0, 0, 0));
+  background: linear-gradient(145deg, var(--bg-color1-dark), var(--bg-color1));
   padding-top: 70px;
   height: 2000px;
 }
@@ -23,11 +23,11 @@
   font-size: 1.2em;
 }
 .content .hero .line1 {
-  animation: 3s fade-in-delay ease 1;
+  animation: 2.5s fade-in-delay ease 1;
   margin-top: 30px;
 }
 .content .hero .line2 {
-  animation: 5.5s fade-in-delay1 ease 1;
+  animation: 2.5s fade-in-delay ease 1;
 }
 .content .hero .standout {
   color: var(--accent-color);
@@ -35,11 +35,11 @@
   display: inline-block;
   transition: transform 0.2s ease-in-out;
   animation: bounce 0.7s ease 4;
-  animation-delay: 6.7s;
+  animation-delay: 6s;
 }
 .content .hero .hero-left {
   width: 50%;
-  padding-top: 100px;
+  padding-top: 40px;
   display: flex;
   flex-direction: column;
 }
@@ -52,24 +52,45 @@
 .content .hero .hero-pic {
   border-radius: 50%;
   width: 400px;
+  height: 400px;
   opacity: 0.6;
-  animation: fade-in-pic 4.8s ease 1;
+  animation: fade-in-pic 2.5s ease 1;
   transition: border-radius 0.5s ease, opacity 0.5s ease;
 }
 .content .hero .hero-pic:hover {
   border-radius: 5%;
   opacity: 0.8;
 }
-.content hr {
-  border-color: gray;
-  border-top: none;
-  width: 30%;
-  margin-top: 70px;
+.content .btn-wrapper {
+  margin-top: 40px;
+}
+.content .pop-btn {
+  border-radius: 50px;
+  padding: 20px 30px;
+  cursor: pointer;
+  background-color: var(--bg-color1);
+  border: solid 1px white;
+  color: var(--primary-color);
+  font-weight: 500;
+  font-size: 18px;
+  font-family: var(--title-font);
+  box-shadow: 4px 4px 0 var(--accent-color);
+  animation: 2.5s fade-in-delay ease 1;
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+  font-family: var(--section-title-font);
+}
+.content .pop-btn:hover {
+  transform: translate(3px, 3px);
+  box-shadow: 1px 1px 0 var(--accent-color);
+  background-color: #2f4950;
+}
+.content .about {
+  padding-top: 20px;
 }
 
 @media screen and (max-width: 1200px) {
   .content .hero {
-    padding-top: 0px;
+    padding-top: 50px;
   }
   .content .hero .hero-left {
     width: 100%;
@@ -79,6 +100,16 @@
   .content .hero .hero-right {
     width: 100%;
     margin-top: 20px;
+  }
+  .content .hero .btn-wrapper {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .content .hero .hero-pic {
+    width: 300px;
+    height: 300px;
   }
 }
 @keyframes bounce {
