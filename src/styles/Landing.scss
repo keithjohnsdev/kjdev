@@ -99,8 +99,29 @@ $bg-color1: rgb(41, 64, 70);
     }
   }
 
-  .about {
-    padding-top: 20px;
+  .philosophy {
+    animation: 3s fade-in-delay ease 1;
+    text-align: center;
+    position: relative;
+
+    .pillar {
+      height: 25vw;
+      position: absolute;
+      top: 5vw;
+
+      &.left {
+        left: -10%;
+      }
+
+      &.right {
+        right: -10%;
+      }
+
+    }
+  }
+
+  .section {
+    margin-top: 140px;
   }
 }
 

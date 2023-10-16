@@ -36,7 +36,20 @@ const Landing = () => {
               />
             </div>
           </div>
-          <SectionTitle title="A BIT ABOUT ME"/>
+          <div className="philosophy section">
+            <SectionTitle title="MY PHILOSOPHY" />
+            <div className="text">
+              <p>
+                I believe that every created thing - be it a tangible object, or
+                text and images on a screen - carries the mark of its creator.{" "}
+                <br />
+                <br />
+                It has a soul, if you will.
+              </p>
+              <img src="./pillar-gradient.png" className="pillar left" />
+              <img src="./pillar-gradient.png" className="pillar right" />
+            </div>
+          </div>
         </Container>
       </div>
     </Layout>

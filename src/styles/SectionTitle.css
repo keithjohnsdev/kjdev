@@ -4,8 +4,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 140px;
-  animation: 3s fade-in-delay ease 1;
+  margin-bottom: 30px;
 }
 
 hr {

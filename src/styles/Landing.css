@@ -84,8 +84,24 @@
   box-shadow: 1px 1px 0 var(--accent-color);
   background-color: #2f4950;
 }
-.content .about {
-  padding-top: 20px;
+.content .philosophy {
+  animation: 3s fade-in-delay ease 1;
+  text-align: center;
+  position: relative;
+}
+.content .philosophy .pillar {
+  height: 25vw;
+  position: absolute;
+  top: 5vw;
+}
+.content .philosophy .pillar.left {
+  left: -10%;
+}
+.content .philosophy .pillar.right {
+  right: -10%;
+}
+.content .section {
+  margin-top: 140px;
 }
 
 @media screen and (max-width: 1200px) {
