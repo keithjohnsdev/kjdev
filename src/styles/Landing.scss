@@ -8,7 +8,7 @@ $bg-color1: rgb(41, 64, 70);
   height: 2000px;
 
   & .hero {
-    padding-top: 120px;
+    padding-top: 130px;
     margin: 0 10%;
     display: flex;
     flex-wrap: wrap;
@@ -53,7 +53,7 @@ $bg-color1: rgb(41, 64, 70);
 
     .hero-right {
       display: flex;
-      justify-content: center;
+      justify-content: right;
       width: 50%;
       padding-top: 0px;
     }
@@ -104,54 +104,112 @@ $bg-color1: rgb(41, 64, 70);
     text-align: center;
     position: relative;
 
+    .text {
+      padding: 0 10%;
+    }
+
     .pillar {
-      height: 25vw;
+      height: 28vw;
+      min-height: 300px;
       position: absolute;
-      top: 5vw;
+      top: 40px;
 
       &.left {
-        left: -10%;
+        left: -17%;
       }
 
       &.right {
-        right: -10%;
+        right: -17%;
       }
+    }
 
+    .quote-div {
+      position: relative;
+      .quote-frame {
+        width: 50%;
+      }
     }
   }
 
   .section {
-    margin-top: 140px;
+    margin-top: 130px;
   }
 }
 
 //-- Media Queries
 
 @media screen and (max-width: 1200px) {
-  .content .hero {
-    padding-top: 50px;
+  .content {
+    .hero {
+      padding-top: 50px;
 
-    .hero-left {
-      width: 100%;
-      align-items: center;
-      text-align: center;
-    }
+      .hero-left {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+      }
 
-    .hero-right {
-      width: 100%;
-      margin-top: 20px;
-    }
+      .hero-right {
+        width: 100%;
+        margin-top: 20px;
+        justify-content: center;
+      }
 
-    .btn-wrapper {
-      margin-top: 30px;
-      margin-bottom: 30px;
+      .btn-wrapper {
+        margin-top: 30px;
+        margin-bottom: 30px;
+      }
     }
   }
 }
 
+@media screen and (max-width: 900px) {
+  .content {
+    .philosophy {
+      .text {
+        padding: 0 15%;
+      }
+      .pillar {
+        &.left {
+          left: -19%;
+        }
+
+        &.right {
+          right: -19%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .content {
+    .philosophy {
+      .text {
+        padding: 0 15%;
+      }
+      .pillar {
+        top: 67%;
+        min-height: 300px;
+        &.left {
+          left: -22%;
+        }
+
+        &.right {
+          right: -22%;
+        }
+      }
+      .quote-div {
+        position: relative;
+        .quote-frame {
+          width: 80%;
+        }
+      }
+    }
+  }
+}
 @media screen and (max-width: 600px) {
   .content .hero {
-
     .hero-pic {
       width: 300px;
       height: 300px;

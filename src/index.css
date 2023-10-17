@@ -2,6 +2,7 @@ body {
     margin: 0;
     font-family: var(--title-font);
     min-width: 320px;
+    overflow-x: hidden;
 }
 
 p {
@@ -9,4 +10,10 @@ p {
     padding: 0;
     color: var(--primary-color);
     font-size: 1em;
+}
+
+@media screen and (max-width: 900px) {
+    p {
+        font-size: 0.9em;
+    }
 }

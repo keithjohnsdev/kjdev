@@ -41,10 +41,37 @@ const Landing = () => {
             <div className="text">
               <p>
                 I believe that every created thing - be it a tangible object, or
-                text and images on a screen - carries the mark of its creator.{" "}
+                a website or app - carries the mark of its creator.
                 <br />
                 <br />
                 It has a soul, if you will.
+                <br />
+                <br />
+                A certain feeling, whether intentional or not, is transferred to
+                the audience.
+                <br />
+                <br />
+                I believe that, when done correctly and with intent, this
+                &quot;feeling&quot; can be the most instrumental part of
+                building a sense of trust and familiarity, and even friendliness
+                and respect, between a business and a new, prospective client.
+                <br />
+                <br />
+                First impressions last forever, and they can make or break a
+                business before a customer even steps through the door.
+                <br />
+                <br />
+                So, in essence, before I wax philosophical for too long,
+                that&apos;s why I&apos;m here.
+                <br />
+                <br />
+                Let&apos;s build something beautiful, true, and good.
+                <br />
+                <br />
+                <br />
+                <div className="quote-div">
+                  <img src="./quote.png" className="quote-frame" />
+                </div>
               </p>
               <img src="./pillar-gradient.png" className="pillar left" />
               <img src="./pillar-gradient.png" className="pillar right" />
