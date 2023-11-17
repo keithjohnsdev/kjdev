@@ -5,8 +5,11 @@
   padding-top: 70px;
   height: 2000px;
 }
+.content .section {
+  padding-bottom: 130px;
+}
 .content .hero {
-  padding-top: 120px;
+  padding-top: 130px;
   margin: 0 10%;
   display: flex;
   flex-wrap: wrap;
@@ -45,7 +48,7 @@
 }
 .content .hero .hero-right {
   display: flex;
-  justify-content: center;
+  justify-content: right;
   width: 50%;
   padding-top: 0px;
 }
@@ -89,19 +92,31 @@
   text-align: center;
   position: relative;
 }
+.content .philosophy .text {
+  padding: 0 10%;
+}
 .content .philosophy .pillar {
-  height: 25vw;
+  height: 28vw;
+  min-height: 300px;
   position: absolute;
-  top: 5vw;
+  top: 40px;
 }
 .content .philosophy .pillar.left {
-  left: -10%;
+  left: -17%;
 }
 .content .philosophy .pillar.right {
-  right: -10%;
+  right: -17%;
 }
-.content .section {
-  margin-top: 140px;
+.content .philosophy .quote-div {
+  position: relative;
+}
+.content .philosophy .quote-div .quote-frame {
+  width: 50%;
+}
+.content .projects {
+  animation: 3s fade-in-delay ease 1;
+  background-color: black;
+  padding-bottom: 110px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -116,16 +131,124 @@
   .content .hero .hero-right {
     width: 100%;
     margin-top: 20px;
+    justify-content: center;
   }
   .content .hero .btn-wrapper {
     margin-top: 30px;
     margin-bottom: 30px;
   }
 }
+@media screen and (max-width: 900px) {
+  .content .hero p {
+    font-size: 1em;
+  }
+  .content .philosophy .text {
+    padding: 0 15%;
+  }
+  .content .philosophy .pillar.left {
+    left: -19%;
+  }
+  .content .philosophy .pillar.right {
+    right: -19%;
+  }
+  .content .philosophy .quote-div .quote-frame {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .content .philosophy .text {
+    padding: 0 15%;
+  }
+  .content .philosophy .pillar {
+    top: 60%;
+  }
+  .content .philosophy .pillar.left {
+    left: -22%;
+  }
+  .content .philosophy .pillar.right {
+    right: -22%;
+  }
+  .content .philosophy .quote-div {
+    margin-top: 20px;
+  }
+  .content .philosophy .quote-div .quote-frame {
+    width: 95%;
+  }
+}
 @media screen and (max-width: 600px) {
-  .content .hero .hero-pic {
-    width: 300px;
-    height: 300px;
+  .content .hero h1 {
+    font-size: 4em;
+  }
+  .content .philosophy .pillar {
+    top: 65%;
+    min-height: 250px;
+  }
+  .content .philosophy .pillar.left {
+    left: -23%;
+  }
+  .content .philosophy .pillar.right {
+    right: -23%;
+  }
+  .content .philosophy .quote-div {
+    margin-top: 20px;
+  }
+  .content .philosophy .quote-div .quote-frame {
+    margin-top: 1vw;
+    width: 95%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .content .philosophy .text {
+    padding: 0 5%;
+  }
+  .content .philosophy .pillar {
+    top: 64%;
+  }
+  .content .philosophy .pillar.left {
+    left: -25%;
+  }
+  .content .philosophy .pillar.right {
+    right: -25%;
+  }
+  .content .philosophy .quote-div {
+    margin-top: 20px;
+  }
+  .content .philosophy .quote-div .quote-frame {
+    margin-top: 1vw;
+    width: 75%;
+  }
+}
+@media screen and (max-width: 430px) {
+  .content .philosophy .pillar {
+    top: 64%;
+  }
+  .content .philosophy .pillar.left {
+    left: -30%;
+  }
+  .content .philosophy .pillar.right {
+    right: -30%;
+  }
+  .content .philosophy .quote-div {
+    margin-top: 20px;
+  }
+  .content .philosophy .quote-div .quote-frame {
+    margin-top: 1vw;
+    width: 80%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .content .philosophy .pillar {
+    display: none;
+  }
+  .content .philosophy .text {
+    padding: 0 5%;
+  }
+  .content .philosophy .quote-div {
+    margin-top: 20px;
+  }
+  .content .philosophy .quote-div .quote-frame {
+    margin-top: 1vw;
+    width: 100%;
   }
 }
 @keyframes bounce {

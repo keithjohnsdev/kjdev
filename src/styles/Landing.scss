@@ -7,6 +7,11 @@ $bg-color1: rgb(41, 64, 70);
   padding-top: 70px;
   height: 2000px;
 
+  .section {
+    // margin-top: 130px;
+    padding-bottom: 130px;
+  }
+
   & .hero {
     padding-top: 130px;
     margin: 0 10%;
@@ -131,8 +136,10 @@ $bg-color1: rgb(41, 64, 70);
     }
   }
 
-  .section {
-    margin-top: 130px;
+  .projects {
+    animation: 3s fade-in-delay ease 1;
+    background-color: black;
+    padding-bottom: 110px;
   }
 }
 
@@ -165,6 +172,11 @@ $bg-color1: rgb(41, 64, 70);
 
 @media screen and (max-width: 900px) {
   .content {
+    .hero {
+      p {
+        font-size: 1em;
+      }
+    }
     .philosophy {
       .text {
         padding: 0 15%;
@@ -178,6 +190,11 @@ $bg-color1: rgb(41, 64, 70);
           right: -19%;
         }
       }
+      .quote-div {
+        .quote-frame {
+          width: 90%;
+        }
+      }
     }
   }
 }
@@ -189,8 +206,7 @@ $bg-color1: rgb(41, 64, 70);
         padding: 0 15%;
       }
       .pillar {
-        top: 67%;
-        min-height: 300px;
+        top: 60%;
         &.left {
           left: -22%;
         }
@@ -200,19 +216,121 @@ $bg-color1: rgb(41, 64, 70);
         }
       }
       .quote-div {
-        position: relative;
+        margin-top: 20px;
         .quote-frame {
+          width: 95%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .content {
+    .hero {
+      h1 {
+        font-size: 4em;
+      }
+      p {
+      }
+    }
+
+    .philosophy {
+      .pillar {
+        top: 65%;
+        min-height: 250px;
+        &.left {
+          left: -23%;
+        }
+
+        &.right {
+          right: -23%;
+        }
+      }
+      .quote-div {
+        margin-top: 20px;
+        .quote-frame {
+          margin-top: 1vw;
+          width: 95%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .content {
+    .hero {
+    }
+
+    .philosophy {
+      .text {
+        padding: 0 5%;
+      }
+      .pillar {
+        top: 64%;
+        &.left {
+          left: -25%;
+        }
+
+        &.right {
+          right: -25%;
+        }
+      }
+      .quote-div {
+        margin-top: 20px;
+        .quote-frame {
+          margin-top: 1vw;
+          width: 75%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .content {
+    .hero {
+    }
+
+    .philosophy {
+      .pillar {
+        top: 64%;
+        &.left {
+          left: -30%;
+        }
+
+        &.right {
+          right: -30%;
+        }
+      }
+      .quote-div {
+        margin-top: 20px;
+        .quote-frame {
+          margin-top: 1vw;
           width: 80%;
         }
       }
     }
   }
 }
-@media screen and (max-width: 600px) {
-  .content .hero {
-    .hero-pic {
-      width: 300px;
-      height: 300px;
+
+@media screen and (max-width: 400px) {
+  .content {
+    .philosophy {
+      .pillar {
+        display: none;
+      }
+      .text {
+        padding: 0 5%;
+      }
+      .quote-div {
+        margin-top: 20px;
+        .quote-frame {
+          margin-top: 1vw;
+          width: 100%;
+        }
+      }
     }
   }
 }
