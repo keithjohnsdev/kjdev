@@ -5,7 +5,7 @@ const Gallery = () => {
   return (
     <div className="gallery">
       <GalleryImage
-        src="/gallery/una.png"
+        src="../../public/gallery/una.png"
         url="https://keithjohnsdev.github.io/una-health/"
       />
       <GalleryImage
